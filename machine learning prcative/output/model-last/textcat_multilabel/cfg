@@ -1,0 +1,7 @@
+{
+  "labels":[
+    "No Stress",
+    "Stress "
+  ],
+  "threshold":0.5
+}
