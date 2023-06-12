@@ -38,8 +38,8 @@ It as an algorithm used in machine learning which categorizes two different data
 
 To run this code you need to provide a dataset you can use the one already uploaded(stress.csv)
 
-Just like spacy model throws accuracy percentage, there exists parameters for accuracy, testing and training. 
+Just like spacy model throws accuracy percentage, we can configure our code to use the inbuilt function to check accuracy and throw it on the console. 
 
-Then there are parameters for accuracy,for testing and training which can be changed and can also work without being changed.
+
 
 At the end we can see a line to test the model where we can give it a line that is not present in dataset for the classification it was trained for and it provides the label that we need.
