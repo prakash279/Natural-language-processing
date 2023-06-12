@@ -1,38 +1,36 @@
---------------------------------------------------------------------------------------------------
-Text Classification Models.
---------------------------------------------------------------------------------------------------
-This repository contains two different approaches to text classification: Spacy and Support Vector Machine (SVM).
+# Text Classification Models
 
---------------------------------------------------------------------------------------------------
-Spacy
---------------------------------------------------------------------------------------------------
-Spacy is a easy and simple to use library created in python which helps in machine learning.
+This repository contains two different approaches to text classification:
+* Spacy Text Classification
+* Support Vector Machine (SVM)
 
-To Create the output model on your computer you need to have the data csv file and the code.
+## Spacy
 
-Then the code converts the data from .csv to .spacy in two different parts one being training while other being validation data.
+Spacy is an industrial grade Natural Language Processing (NLP) library created in python which can be used to create ML models.
 
-Once the data is created in .spacy format you need to create a base_config.cfg.
+To create a valid output model for us to use in our projects we need to have a *dataset* (in most cases a csv file) and we need to create a *python file* to write those models with the correct algorithm.
+We also need to write a small code to convert and split the data so that we can work with it efficiently. The code will split the dataset into a training part and a testing part. The testing data is also known as Validation data. Remember to set a path for train.spacy and valid.spacy in the above code.
 
-which can either created from the website below with your own speicfications.
+Once the data has been modified to our use, we can create a base_config.cfg file. Spacy offers a base config file an it can be later modified for the use of different components. The config.cfg can be downloaded [here](https://spacy.io/usage/training#quickstart). For training we only need a single configuration file that includes all settings and hyperparameters.
+ 
+After you’ve saved the starter config to a file base_config.cfg, you can use the init fill-config command to fill in the remaining defaults. 
 
-You need to set the path for train.spacy and valid.spacy the one created above.
-
-https://spacy.io/usage/training
-once you create the base_config.cfg you are supposed to run the following command in command prompt
-
+```
 python -m spacy init fill-config base_config.cfg config.cfg
-this command will create a config.cfg file 
+```
 
-now you can start creating an output model using the command
+This command will fill in the defaults for you and create config.cfg file 
+
+Now you can start training with spacy!
+
+```
 python -m spacy train config.cfg --output ./output
-(Specifications like using GPU or any another vectors library can be done from the above website as it offers a lot of specifications)
+```
 
 Once the output model is created it will tell you it's accuracy and the model can be tested on new data by using the output_test.py file.
 
---------------------------------------------------------------------------------------------------
-Support Vector Machine
---------------------------------------------------------------------------------------------------
+
+## Support Vector Machine
 
 It as an algorithm used in machine learning which categorizes two different data in two different modules.
 
